@@ -1,0 +1,30 @@
+<?php   defined( '_ALONE' ) or die( 'Direct Access is not allowed.' );
+$go_bible_search="index.php?view=showsyn&amp;of"; ?> 
+<p <?php echo $text_1; ?>>
+The Twelfth Day of the Blessed Month of Baramhat
+</p>
+<p <?php echo $text_2; ?>>The Commemoration of the Honorable Angel Michael.</p>
+<?php  if(file_exists("icons/Baramhat12-1.jpg")){ echo "<p $text_3m > <img src=\"./icons/Baramhat12-1.jpg\" style=\"float:left;margin:10px; max-width:100px;\" alt=\"icon\" /><br /><br />"; } else {echo "<p $text_3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ";}?>
+ On this day the church celebrates the commemoration of the head of the heavenly hosts the honorable Archangel Michael, the intercessor for the human race.
+</p>
+<p <?php echo $text_4; ?>>May his intercession be for us all. Amen.</p> 
+<p <?php echo $text_2; ?>>The Commemoration of the revealing of the virginity of St. Demetrius the Twelfth Pope of Alexandria.</p>
+<?php  if(file_exists("icons/Baramhat12-2.jpg")){ echo "<p $text_3m > <img src=\"./icons/Baramhat12-2.jpg\" style=\"float:left;margin:10px; max-width:100px;\" alt=\"icon\" /><br /><br />"; } else {echo "<p $text_3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ";}?>
+On this day also the church celebrates the commemoration of the revealing of the virginity of St. Demetrius the Twelfth Pope of Alexandria. The angel of the Lord appeared to St. Julian, the Eleventh Pope, before his departure and said: "You are going to the Lord Christ, the one who will bring you tomorrow a cluster of grapes, is the one fit to be a Patriarch after you." On the morrow, this saint came with a cluster of grapes, Abba Julian held him and told the people: "This is your Patriarch after me," and told them what the angel told him. After the departure of Abba Julian they took him and ordained him Patriarch on the 9th day of Baramhat (March 4th., 188 A.D.) and he was married.
+Since no married Patriarch ever before this father been enthroned over the See of Alexandria, satan entered the hearts of the laity and made them talk and grumble against the Patriarch and the one who recommended him. The angel of God appeared to St. Demetrius and told him about that and ordered him to remove the doubt from their hearts by revealing to them his relation with his wife. When St. Demetrius refused, the angel told him: "It is not meet that you save your self alone and let others be perished because of you. But because you are a shepherd you should fight to save your people also".
+On the next day, after he had finished celebrating the Divine Liturgy, he asked the people not to leave the church. He brought flamed charcoal, and brought his wife from the place of the women and the congregation wondered at his action, not knowing what he was going to do. He prayed and walked on the blazing fire, he took a piece of the blazing fire and put it in his shawl, then he took another piece and put it in his wife's shawl. He prayed again for a long time and both shawls did not burn. The congregation marvelled and asked him to tell them why he did that. He told them of his strife with his wife, and how his father and her father married them against their will, and they have lived together as a brother and sister since they were married forty-eight years ago, the angel of the Lord each night covered them with his wings, and no one knew that before that time until the angel of the Lord ordered him to reveal his secret.
+The congregation marvelled for what they had seen and heard, they praised and glorified God asking the Saint to pardon them for what they had done or said and to forgive them. He accepted their apology, forgave them, blessed them, and sent them to their homes glorifying the Father, and the Son, and the Holy Spirit talking about what they saw of wonders from this Saint.
+</p>
+<p <?php echo $text_4; ?>>May his prayers be with us. Amen.</p>
+<p <?php echo $text_2; ?>>The Martyrdom of St. Malachias of Palestine.</p>
+<?php  if(file_exists("icons/Baramhat12-3.jpg")){ echo "<p $text_3m > <img src=\"./icons/Baramhat12-3.jpg\" style=\"float:left;margin:10px; max-width:100px;\" alt=\"icon\" /><br /><br />"; } else {echo "<p $text_3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ";}?>
+On this day also the righteous St. Malachias was martyred in the land of Palestine.
+</p>
+<p <?php echo $text_4; ?>>May his prayers be with us. Amen.</p>
+<p <?php echo $text_2; ?>>The Martyrdom of St. Glathinos in Damascus.</p>
+<?php  if(file_exists("icons/Baramhat12-4.jpg")){ echo "<p $text_3m > <img src=\"./icons/Baramhat12-4.jpg\" style=\"float:left;margin:10px; max-width:100px;\" alt=\"icon\" /><br /><br />"; } else {echo "<p $text_3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ";}?>
+On this day the church also celebrates the commemoration of the martyrdom of St. Glathinos (Glazinos) who was in the early part of the reign of Emperor Constantine the great. This Saint was from the city of Marmeen, near Damascus. He was acting with a group of people who were from the city of Heleopolis, Lebanon, and dedicated themselves to worship idols.
+One day they gathered in the theater, and the actors poured cold water in a large brass basin, and started mocking those who go to the holy Christian baptism. They dipped one of those actors in the water, to act his baptism, when he came out of the water they put on him white cloth.
+This actor after he had come out of the water, refused to go on acting, and made it known that he prefered to die Christian on the Name of the Lord Christ, and he added to that saying: "While you were mocking during my renewal with the Holy Baptism, I have witnessed a wondrous miracle." Those who were present became offended, and extremely furious for they were pagans. They seized the Saint, stoned him, and St. Glathinos delivered up his soul and received the crown of martyrdom, and was counted among the holy martyrs. His family and many of the Christians came, took his body, and buried him in the city where they built a church after his name.
+</p>
+<p <?php echo $text_4; ?>>May his blessings be with us and Glory be to God forever. Amen.</p>

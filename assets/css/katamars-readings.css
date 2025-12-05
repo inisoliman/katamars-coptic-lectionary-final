@@ -1,0 +1,289 @@
+/* Katamars Readings Styles */
+
+/* Reading Sections */
+.katamars-reading-section {
+    margin-bottom: 50px;
+    scroll-margin-top: 100px;
+}
+
+.katamars-service-header {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    border-bottom: 1px dashed var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.katamars-reading-section h4 {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+/* Parchment Card Effect for Readings */
+.katamars-reading {
+    background: #fffcf5;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid var(--glass-border);
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+.katamars-text {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+/* Force verses to display as separate lines */
+.katamars-text .katamars-verse {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 12px;
+    line-height: 1.9;
+    text-align: justify;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect - elegant highlight */
+.katamars-text .katamars-verse:hover {
+    background: linear-gradient(90deg, rgba(139, 0, 0, 0.08) 0%, rgba(184, 134, 11, 0.08) 100%);
+    transform: translateX(5px);
+    box-shadow: -3px 0 0 var(--accent-color);
+    padding-right: 15px;
+}
+
+[dir="ltr"] .katamars-text .katamars-verse:hover {
+    transform: translateX(-5px);
+    box-shadow: 3px 0 0 var(--accent-color);
+    padding-left: 15px;
+    padding-right: 12px;
+}
+
+.katamars-text .verse-number {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.katamars-text .katamars-verse:hover .verse-number {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.katamars-reference {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.katamars-ref-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary-color);
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.katamars-ref-link:hover {
+    background: rgba(var(--primary-color), 0.1);
+    border-bottom-style: solid;
+}
+
+.katamars-ref-link .icon {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* Liturgical Intro/Conclusion */
+.katamars-intro,
+.katamars-conclusion {
+    background: rgba(var(--primary-color), 0.05);
+    border-right: 4px solid var(--accent-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-style: italic;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+[dir="ltr"] .katamars-intro,
+[dir="ltr"] .katamars-conclusion {
+    border-right: none;
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Synaxarium */
+.katamars-synaxarium {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 2px solid var(--accent-color);
+}
+
+.katamars-synax-content {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+}
+
+/* Floating Navigation */
+.katamars-floating-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 900;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+/* RTL Positioning */
+[dir="rtl"] .katamars-floating-nav {
+    right: 20px;
+}
+
+/* LTR Positioning */
+[dir="ltr"] .katamars-floating-nav {
+    left: 20px;
+}
+
+.katamars-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.katamars-nav-item:hover,
+.katamars-nav-item.active {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Tooltip for Nav Items */
+.katamars-nav-item .nav-tooltip {
+    position: absolute;
+    background: var(--text-color);
+    color: var(--glass-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+[dir="rtl"] .katamars-nav-item .nav-tooltip {
+    right: 60px;
+}
+
+[dir="ltr"] .katamars-nav-item .nav-tooltip {
+    left: 60px;
+}
+
+.katamars-nav-item:hover .nav-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide Floating Nav on Mobile */
+@media (max-width: 1100px) {
+    .katamars-floating-nav {
+        bottom: 0;
+        top: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+        right: 0 !important;
+        left: 0 !important;
+    }
+
+    .katamars-container {
+        margin-bottom: 80px;
+    }
+
+    [dir="rtl"] .katamars-nav-item .nav-tooltip,
+    [dir="ltr"] .katamars-nav-item .nav-tooltip {
+        bottom: 60px;
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Copy Notification Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .katamars-controls {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .katamars-btn {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .katamars-floating-nav {
+        bottom: 10px;
+        right: 10px;
+    }
+}

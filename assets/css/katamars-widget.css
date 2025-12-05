@@ -1,0 +1,296 @@
+/* Katamars Widget Styles */
+
+.katamars-widget-readings {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+}
+
+.katamars-widget-readings .widget-title {
+    background: linear-gradient(135deg, #8B0000 0%, #B8860B 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    margin: -10px -10px 15px -10px;
+    font-size: 1.15rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.readings-container {
+    padding: 10px;
+}
+
+.reading-section {
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 250, 240, 0.9) 100%);
+    border-radius: 12px;
+    padding: 14px;
+    border: 2px solid rgba(139, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: #8B0000;
+    font-size: 1.05rem;
+    margin: 0 0 12px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(139, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.reading-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reading-list li {
+    margin-bottom: 10px;
+}
+
+.reading-link {
+    display: block;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 250, 245, 0.95) 100%);
+    border: 2px solid rgba(139, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #8B0000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    position: relative;
+    font-weight: 600;
+}
+
+.reading-link:hover {
+    background: linear-gradient(135deg, #8B0000 0%, #B8860B 100%);
+    color: white;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+    border-color: #8B0000;
+}
+
+.reading-link::before {
+    content: '📖';
+    margin-left: 8px;
+}
+
+/* Synaxarium Section */
+.synaxarium {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.15) 0%, rgba(218, 165, 32, 0.15) 100%);
+    border-color: rgba(184, 134, 11, 0.4);
+}
+
+.synaxarium .section-title {
+    color: #B8860B;
+    border-bottom-color: rgba(184, 134, 11, 0.4);
+}
+
+.synaxarium-content {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Modal Styles */
+.katamars-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(135deg, #fffcf5 0%, #fff8e7 100%);
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease;
+    direction: rtl;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #8B0000;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #8B0000;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    background: #8B0000;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #8B0000 0%, #B8860B 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.modal-body {
+    padding: 25px;
+    max-height: 50vh;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 2;
+    background: white;
+    color: #333;
+}
+
+.modal-body .loading {
+    text-align: center;
+    color: #8B0000;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+.modal-body .katamars-verse {
+    display: block;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    background: rgba(255, 250, 240, 0.5);
+    border-right: 3px solid rgba(139, 0, 0, 0.2);
+}
+
+.modal-body .katamars-verse:hover {
+    background: rgba(139, 0, 0, 0.08);
+    border-right-color: #8B0000;
+}
+
+.modal-body .verse-number {
+    background: linear-gradient(135deg, #8B0000 0%, #B8860B 100%);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 0.85em;
+}
+
+.modal-body .verse-text {
+    color: #2c3e50;
+}
+
+.modal-footer {
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(139, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.modal-footer button,
+.modal-footer a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #8B0000;
+    background: white;
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.modal-footer button:hover,
+.modal-footer a:hover {
+    background: #8B0000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
+}
+
+/* Tooltip on Hover */
+.reading-link[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
+
+.reading-link:hover[data-tooltip]::after {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .modal-body {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,496 @@
+/* Katamars Coptic Lectionary Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+.katamars-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fffdf5;
+    /* Cream background */
+    border: 1px solid #d4af37;
+    /* Gold border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Amiri', 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+}
+
+.katamars-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px double #8b4513;
+    /* SaddleBrown double border */
+}
+
+.katamars-header h2 {
+    color: #8b0000;
+    /* DarkRed */
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.katamars-gregorian {
+    color: #555;
+    font-size: 1.2rem;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Date Picker Form */
+.katamars-date-form {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #e0c097;
+}
+
+.katamars-date-form label {
+    font-size: 1.1rem;
+    color: #8b4513;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.katamars-date-form input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #daa520;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.katamars-date-form button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.katamars-date-form button:hover {
+    background-color: #a0522d;
+}
+
+.katamars-feast {
+    background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid #daa520;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.katamars-feast h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #fff !important;
+}
+
+.katamars-readings {
+    margin-bottom: 2rem;
+}
+
+.katamars-readings>h3 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #daa520;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.katamars-reading-section {
+    margin-bottom: 2.5rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.katamars-reading-section h4 {
+    color: #fff;
+    background-color: #8b4513;
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-reading {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e0c097;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.katamars-reference {
+    font-weight: bold;
+    color: #b22222;
+    /* FireBrick */
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px dashed #daa520;
+    padding-bottom: 0.5rem;
+}
+
+.katamars-text {
+    color: #333;
+    line-height: 2;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Verse Styling with Flexbox */
+.katamars-verse {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.katamars-verse:hover {
+    background-color: #fdfdfd;
+}
+
+.verse-number {
+    flex: 0 0 35px;
+    /* Fixed width for number */
+    height: 35px;
+    background-color: #8b4513;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    /* Space between number and text in RTL */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verse-text {
+    flex: 1;
+    line-height: 2.2;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+.katamars-synaxarium {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 3px double #8b4513;
+}
+
+.katamars-synaxarium h3 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.katamars-synax-content {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    line-height: 2;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+}
+
+/* RTL Support */
+.katamars-container[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+.katamars-container[dir="rtl"] .katamars-text,
+.katamars-container[dir="rtl"] .katamars-synax-content {
+    text-align: justify;
+}
+
+.katamars-container[dir="rtl"] .katamars-reading-section h4 {
+    border-radius: 4px;
+    /* Reset radius */
+}
+
+.katamars-container[dir="rtl"] .verse-number {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* LTR Support */
+
+.katamars-date-form label {
+    font-size: 1.1rem;
+    color: #8b4513;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.katamars-date-form input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #daa520;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.katamars-date-form button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.katamars-date-form button:hover {
+    background-color: #a0522d;
+}
+
+.katamars-feast {
+    background: linear-gradient(135deg, #8b0000 0%, #a52a2a 100%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid #daa520;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.katamars-feast h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #fff !important;
+}
+
+.katamars-readings {
+    margin-bottom: 2rem;
+}
+
+.katamars-readings>h3 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #daa520;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.katamars-reading-section {
+    margin-bottom: 2.5rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.katamars-reading-section h4 {
+    color: #fff;
+    background-color: #8b4513;
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-reading {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e0c097;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.katamars-reference {
+    font-weight: bold;
+    color: #b22222;
+    /* FireBrick */
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px dashed #daa520;
+    padding-bottom: 0.5rem;
+}
+
+.katamars-text {
+    color: #333;
+    line-height: 2;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Verse Styling with Flexbox */
+.katamars-verse {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.katamars-verse:hover {
+    background-color: #fdfdfd;
+}
+
+.verse-number {
+    flex: 0 0 35px;
+    /* Fixed width for number */
+    height: 35px;
+    background-color: #8b4513;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    /* Space between number and text in RTL */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verse-text {
+    flex: 1;
+    line-height: 2.2;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+.katamars-synaxarium {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 3px double #8b4513;
+}
+
+.katamars-synaxarium h3 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.katamars-synax-content {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    line-height: 2;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+}
+
+/* RTL Support */
+.katamars-container[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+.katamars-container[dir="rtl"] .katamars-text,
+.katamars-container[dir="rtl"] .katamars-synax-content {
+    text-align: justify;
+}
+
+.katamars-container[dir="rtl"] .katamars-reading-section h4 {
+    border-radius: 4px;
+    /* Reset radius */
+}
+
+.katamars-container[dir="rtl"] .verse-number {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* LTR Support */
+.katamars-container[dir="ltr"] .verse-number {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+/* Service Headers (Vespers, Matins, Liturgy) */
+.katamars-service-header {
+    color: #8b0000;
+    font-size: 2.2rem;
+    margin: 2rem 0 1.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #daa520;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    clear: both;
+}
+
+/* Liturgical Intro and Conclusion */
+.katamars-intro,
+.katamars-conclusion {
+    font-style: italic;
+    color: #555;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px dashed #e0e0e0;
+}
+
+.katamars-intro {
+    margin-bottom: 1.5rem;
+}
+
+.katamars-conclusion {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .katamars-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .katamars-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .katamars-reading {
+        padding: 1rem;
+    }
+}

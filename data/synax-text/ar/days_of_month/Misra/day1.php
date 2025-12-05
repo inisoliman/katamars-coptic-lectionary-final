@@ -1,0 +1,1 @@
+<?phpdefined('_ALONE') or die('Restricted access');$ar_text="<p style=\"charset:utf-8;\" />";$ar_text.="<p $arstay>01- «·ÌÊ„ «·√Ê· - ‘Â— „”—Ï</p>";$ar_text.= "<p $arstaci>„”—Ì </p><p $arstaci>«” ‘Â«œ «·ﬁœÌ” «»«·Ï »‰ Ì”ÿ” </p><p $arstaci>‰Ì«Õ… «·»«»« «·ﬁœÌ” ﬂÌ—·” «·Œ«„” »«»« «·≈”ﬂ‰œ—Ì… «·„«∆… «·À«‰Ì ⁄‘— </p>";$ar_text2=iconv("windows-1256", "utf-8", $ar_text );?>

@@ -1,0 +1,241 @@
+/* Katamars Core Styles */
+
+/* Glassmorphism Variables */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-blur: 12px;
+    --primary-color: #8b0000;
+    /* Deep Red */
+    --accent-color: #d4af37;
+    /* Gold */
+    --text-color: #2c3e50;
+    --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #e6e9f0 100%);
+    /* Parchment-like light bg */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --glass-bg: rgba(30, 30, 30, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    --primary-color: #ff6b6b;
+    --accent-color: #ffd700;
+    --text-color: #e0e0e0;
+    --bg-gradient: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 100%);
+}
+
+/* Base Styles */
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    transition: background 0.5s ease;
+    margin: 0;
+}
+
+.katamars-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Header */
+.katamars-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+}
+
+.katamars-header h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-gregorian {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* Controls & Buttons */
+.katamars-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.katamars-btn {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--glass-border);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.katamars-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-btn.primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.katamars-btn.primary:hover {
+    background: var(--primary-color);
+    filter: brightness(1.1);
+}
+
+.katamars-btn .icon {
+    font-size: 1.2em;
+}
+
+/* Date Picker Form */
+.katamars-date-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--glass-border);
+    flex-wrap: wrap;
+}
+
+.katamars-date-form label {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.katamars-date-form input[type="date"] {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.katamars-date-form input[type="date"]:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.1);
+}
+
+.katamars-date-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.katamars-date-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    /* Will be flipped in RTL if needed, but usually fixed */
+    z-index: 1000;
+    background: var(--glass-bg);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* Loading Spinner */
+.katamars-loader {
+    display: none;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid var(--primary-color);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .katamars-container {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .katamars-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .katamars-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .katamars-btn {
+        justify-content: center;
+    }
+}

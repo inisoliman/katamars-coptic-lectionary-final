@@ -1,0 +1,1716 @@
+/* Glassmorphism Variables */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-blur: 10px;
+    --primary-color: #8b0000;
+    /* Deep Red */
+    --accent-color: #d4af37;
+    /* Gold */
+    --text-color: #2c3e50;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --glass-bg: rgba(30, 30, 30, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --primary-color: #ff6b6b;
+    --accent-color: #ffd700;
+    --text-color: #e0e0e0;
+    --bg-gradient: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+}
+
+/* Base Styles */
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+.katamars-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.katamars-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+}
+
+.katamars-header h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-gregorian {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* Controls & Buttons */
+.katamars-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.katamars-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--glass-border);
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+/* Glassmorphism Variables */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-blur: 10px;
+    --primary-color: #8b0000;
+    /* Deep Red */
+    --accent-color: #d4af37;
+    /* Gold */
+    --text-color: #2c3e50;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --glass-bg: rgba(30, 30, 30, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --primary-color: #ff6b6b;
+    --accent-color: #ffd700;
+    --text-color: #e0e0e0;
+    --bg-gradient: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+}
+
+/* Base Styles */
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+.katamars-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.katamars-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+}
+
+.katamars-header h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-gregorian {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* Controls & Buttons */
+.katamars-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.katamars-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--glass-border);
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.katamars-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-btn.primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.katamars-btn.primary:hover {
+    background: var(--primary-color);
+    filter: brightness(1.1);
+}
+
+/* Date Picker Form */
+.katamars-date-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--glass-border);
+    flex-wrap: wrap;
+}
+
+.katamars-date-form label {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.katamars-date-form input[type="date"] {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.katamars-date-form input[type="date"]:focus {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+.katamars-date-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-date-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1);
+}
+
+/* Readings */
+.katamars-reading-section {
+    margin-bottom: 40px;
+}
+
+.katamars-reading-section h4 {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.katamars-reading {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid var(--glass-border);
+    margin-bottom: 20px;
+}
+
+.katamars-text {
+    font-size: 1.15rem;
+
+    .verse-number {
+        background: var(--accent-color);
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    /* Dark Mode Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--glass-bg);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    /* Loading Spinner */
+    .katamars-loader {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid var(--primary-color);
+        width: 40px;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 20px;
+    }
+
+    .katamars-header h2 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-gregorian {
+        color: var(--text-color);
+        opacity: 0.8;
+        font-size: 1.2rem;
+    }
+
+    /* Controls & Buttons */
+    .katamars-controls {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .katamars-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid var(--glass-border);
+        padding: 12px 24px;
+        border-radius: 50px;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+    }
+
+    .katamars-btn:hover {
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-btn.primary {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+    }
+
+    .katamars-btn.primary:hover {
+        background: var(--primary-color);
+        filter: brightness(1.1);
+    }
+
+    /* Date Picker Form */
+    .katamars-date-form {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid var(--glass-border);
+        flex-wrap: wrap;
+    }
+
+    .katamars-date-form label {
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 1.1rem;
+    }
+
+    .katamars-date-form input[type="date"] {
+        padding: 10px 15px;
+        border-radius: 25px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-color);
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+    .katamars-date-form input[type="date"]:focus {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        filter: brightness(1.1);
+    }
+
+    /* Readings */
+    .katamars-reading-section {
+        margin-bottom: 40px;
+    }
+
+    .katamars-reading-section h4 {
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-reading {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid var(--glass-border);
+        margin-bottom: 20px;
+    }
+
+    .katamars-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Verse Styling - Default (Inline / Book View) */
+    .katamars-verse {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+    }
+
+    .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    .verse-number {
+        display: inline-block;
+        font-size: 0.75em;
+        color: var(--primary-color);
+        font-weight: bold;
+        vertical-align: super;
+        margin: 0 2px 0 5px;
+        background: none;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    /* Verse Styling - List View (Toggled) */
+    .katamars-readings.layout-list .katamars-verse {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid transparent;
+        transition: background 0.2s;
+    }
+
+    .katamars-readings.layout-list .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--glass-border);
+    }
+
+    .katamars-readings.layout-list .verse-number {
+        background: var(--accent-color);
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 0.9em;
+        vertical-align: baseline;
+    }
+
+    /* Dark Mode Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--glass-bg);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    /* Loading Spinner */
+    .katamars-loader {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid var(--primary-color);
+        width: 40px;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+    }
+
+    .katamars-btn:hover {
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-btn.primary {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+    }
+
+    .katamars-btn.primary:hover {
+        background: var(--primary-color);
+        filter: brightness(1.1);
+    }
+
+    /* Date Picker Form */
+    .katamars-date-form {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid var(--glass-border);
+        flex-wrap: wrap;
+    }
+
+    .katamars-date-form label {
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 1.1rem;
+    }
+
+    .katamars-date-form input[type="date"] {
+        padding: 10px 15px;
+        border-radius: 25px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-color);
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+    .katamars-date-form input[type="date"]:focus {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        filter: brightness(1.1);
+    }
+
+    /* Readings */
+    .katamars-reading-section {
+        margin-bottom: 40px;
+    }
+
+    .katamars-reading-section h4 {
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-reading {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid var(--glass-border);
+        margin-bottom: 20px;
+    }
+
+    .katamars-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Verse Styling - Default (Inline / Book View) */
+    .katamars-verse {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+    }
+
+    .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    .verse-number {
+        display: inline-block;
+        font-size: 0.75em;
+        color: var(--primary-color);
+        font-weight: bold;
+        vertical-align: super;
+        margin: 0 2px 0 5px;
+        background: none;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    /* Verse Styling - List View (Toggled) */
+    .katamars-readings.layout-list .katamars-verse {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid transparent;
+        transition: background 0.2s;
+    }
+
+    .katamars-readings.layout-list .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--glass-border);
+    }
+
+    .katamars-readings.layout-list .verse-number {
+        background: var(--accent-color);
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 0.9em;
+        vertical-align: baseline;
+    }
+
+    /* Dark Mode Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--glass-bg);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    /* Loading Spinner */
+    .katamars-loader {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid var(--primary-color);
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Liturgical Intro and Conclusion */
+    .katamars-intro,
+    .katamars-conclusion {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid var(--glass-border);
+        padding: 15px;
+        border-radius: 12px;
+        margin: 15px 0;
+        font-style: italic;
+        color: var(--text-color);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .katamars-intro::before,
+    .katamars-conclusion::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent-color);
+    }
+
+    .katamars-intro {
+        border-left: 4px solid var(--accent-color);
+        /* Fallback/Additional visual */
+        margin-bottom: 20px;
+    }
+
+    .katamars-conclusion {
+        border-right: 4px solid var(--accent-color);
+        border-radius: 25px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-color);
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+    .katamars-date-form input[type="date"]:focus {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        filter: brightness(1.1);
+    }
+
+    /* Readings */
+    .katamars-reading-section {
+        margin-bottom: 40px;
+    }
+
+    .katamars-reading-section h4 {
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-reading {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid var(--glass-border);
+        margin-bottom: 20px;
+    }
+
+    .katamars-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Verse Styling - Default (Inline / Book View) */
+    .katamars-verse {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+    }
+
+    .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    .verse-number {
+        display: inline-block;
+        font-size: 0.75em;
+        color: var(--primary-color);
+        font-weight: bold;
+        vertical-align: super;
+        margin: 0 2px 0 5px;
+        background: none;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    /* Verse Styling - List View (Toggled) */
+    .katamars-readings.layout-list .katamars-verse {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid transparent;
+        transition: background 0.2s;
+    }
+
+    .katamars-readings.layout-list .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--glass-border);
+    }
+
+    .katamars-readings.layout-list .verse-number {
+        background: var(--accent-color);
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 0.9em;
+        vertical-align: baseline;
+    }
+
+    /* Dark Mode Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--glass-bg);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    /* Loading Spinner */
+    .katamars-loader {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid var(--primary-color);
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Liturgical Intro and Conclusion */
+    .katamars-intro,
+    .katamars-conclusion {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid var(--glass-border);
+        padding: 15px;
+        border-radius: 12px;
+        margin: 15px 0;
+        font-style: italic;
+        color: var(--text-color);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .katamars-intro::before,
+    .katamars-conclusion::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent-color);
+    }
+
+    .katamars-intro {
+        border-left: 4px solid var(--accent-color);
+        /* Fallback/Additional visual */
+        margin-bottom: 20px;
+    }
+
+    .katamars-conclusion {
+        border-right: 4px solid var(--accent-color);
+        margin-top: 20px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-color);
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+    .katamars-date-form input[type="date"]:focus {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-date-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        filter: brightness(1.1);
+    }
+
+    /* Readings */
+    .katamars-reading-section {
+        margin-bottom: 40px;
+    }
+
+    .katamars-reading-section h4 {
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .katamars-reading {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid var(--glass-border);
+        margin-bottom: 20px;
+    }
+
+    .katamars-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Verse Styling - Default (Inline / Book View) */
+    .katamars-verse {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+    }
+
+    .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    .verse-number {
+        display: inline-block;
+        font-size: 0.75em;
+        color: var(--primary-color);
+        font-weight: bold;
+        vertical-align: super;
+        margin: 0 2px 0 5px;
+        background: none;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    /* Verse Styling - List View (Toggled) */
+    .katamars-readings.layout-list .katamars-verse {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid transparent;
+        transition: background 0.2s;
+    }
+
+    .katamars-readings.layout-list .katamars-verse:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--glass-border);
+    }
+
+    .katamars-readings.layout-list .verse-number {
+        background: var(--accent-color);
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 15px;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 0.9em;
+        vertical-align: baseline;
+    }
+
+    /* Dark Mode Toggle */
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--glass-bg);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border);
+    }
+
+    /* Loading Spinner */
+    .katamars-loader {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 4px solid var(--primary-color);
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Liturgical Intro and Conclusion */
+    .katamars-intro,
+    .katamars-conclusion {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid var(--glass-border);
+        padding: 15px;
+        border-radius: 12px;
+        margin: 15px 0;
+        font-style: italic;
+        color: var(--text-color);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .katamars-intro::before,
+    .katamars-conclusion::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent-color);
+    }
+
+    .katamars-intro {
+        border-left: 4px solid var(--accent-color);
+        /* Fallback/Additional visual */
+        margin-bottom: 20px;
+    }
+
+    .katamars-conclusion {
+        border-right: 4px solid var(--accent-color);
+        margin-top: 20px;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    /* Responsive */
+    /* Responsive */
+    @media (max-width: 768px) {
+        .katamars-container {
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .katamars-btn {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+        }
+
+        .katamars-date-form button {
+            padding: 10px 20px;
+        }
+    }
+
+    /* Bible Browser Styles - Premium Design */
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+    .katamars-bible-menu,
+    .katamars-bible-chapters,
+    .katamars-bible-reader {
+        font-family: 'Amiri', 'Segoe UI', serif;
+    }
+
+    /* Headings */
+    .katamars-bible-menu h2,
+    .chapter-list-title,
+    .chapter-heading {
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 15px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* Testament Titles */
+    .testament-title {
+        color: var(--text-color);
+        font-size: 2rem;
+        margin: 30px 0 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .testament-title::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: var(--accent-color);
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+
+    /* Book List Grid */
+    .katamars-book-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .katamars-book-list li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+        border: 1px solid var(--glass-border);
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .katamars-book-list li a:hover {
+        background: white;
+        color: var(--primary-color);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .book-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    /* Chapter Grid */
+    .katamars-chapter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        border: 1px solid var(--glass-border);
+    }
+
+    .chapter-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        /* Circular */
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .chapter-item:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Navigation Bar */
+    .katamars-bible-nav {
+        background: rgba(255, 255, 255, 0.25);
+        padding: 15px 25px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        border: 1px solid var(--glass-border);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        font-size: 1.1rem;
+    }
+
+    .katamars-bible-nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .katamars-bible-nav .separator {
+        color: var(--text-color);
+        opacity: 0.5;
+    }
+
+    .katamars-bible-nav .current {
+        color: var(--text-color);
+        font-weight: normal;
+    }
+
+    /* Toolbar */
+    .katamars-reader-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        border: 1px solid var(--glass-border);
+    }
+
+    .toolbar-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .tool-btn {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid var(--glass-border);
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        color: var(--primary-color);
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .katamars-date-form button {
+        padding: 10px 20px;
+    }
+}
+
+/* Bible Browser Styles - Premium Design */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+.katamars-bible-menu,
+.katamars-bible-chapters,
+.katamars-bible-reader {
+    font-family: 'Amiri', 'Segoe UI', serif;
+}
+
+/* Headings */
+.katamars-bible-menu h2,
+.chapter-list-title,
+.chapter-heading {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Testament Titles */
+.testament-title {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin: 30px 0 20px;
+    text-align: center;
+    position: relative;
+}
+
+.testament-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Book List Grid */
+.katamars-book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.katamars-book-list li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    border: 1px solid var(--glass-border);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.katamars-book-list li a:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Chapter Grid */
+.katamars-chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+}
+
+.chapter-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    /* Circular */
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.chapter-item:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+.katamars-bible-nav {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+}
+
+.katamars-bible-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.katamars-bible-nav .separator {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.katamars-bible-nav .current {
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+/* Toolbar */
+.katamars-reader-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 10px;
+}
+
+.tool-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--glass-border);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tool-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tool-btn.playing {
+    background: var(--accent-color);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* Reading Content (Parchment) */
+.katamars-chapter-content {
+    background: #fffcf5;
+    /* Parchment color */
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #e0d0b0;
+    line-height: 1.8;
+    font-size: 22px;
+    /* Default font size */
+    text-align: justify;
+    color: #2c1810;
+    /* Dark brown text */
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 60px rgba(212, 175, 55, 0.15);
+    position: relative;
+    margin-top: 20px;
+    transition: font-size 0.3s ease;
+}
+
+/* Decorative corners */
+.katamars-chapter-content::before,
+.katamars-chapter-content::after {
+    content: '✥';
+    position: absolute;
+    color: var(--accent-color);
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.katamars-chapter-content::before {
+    top: 15px;
+    left: 15px;
+}
+
+.katamars-chapter-content::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+.katamars-chapter-content .katamars-verse {
+    display: inline;
+}
+
+.katamars-chapter-content .verse-num {
+    font-size: 0.65em;
+    color: var(--accent-color);
+    vertical-align: super;
+    margin: 0 3px 0 8px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.katamars-chapter-content .verse-text {
+    display: inline;
+}
+
+/* Footer Navigation */
+.katamars-chapter-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+    min-width: 120px;
+}
+
+.nav-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+}
+
+.nav-btn.list {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.nav-btn.list:hover {
+    background: var(--primary-color);
+    color: white;
+}
