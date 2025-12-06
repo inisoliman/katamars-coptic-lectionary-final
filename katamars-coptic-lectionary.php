@@ -3,9 +3,10 @@
  * Plugin Name: Katamars Coptic Lectionary
  * Plugin URI: https://github.com/yourusername/katamars-coptic-lectionary
  * Description: A WordPress plugin to display daily Coptic Orthodox readings based on the Coptic calendar.
- * Version: 1.0.0
- * Author: Your Name
- * Author URI: https://yourwebsite.com
+ * Version: 3.0.0
+ * Author: Ibrahim Noshy Soliman
+ * Author URI: https://t.me/inoshyi
+ * Plugin URI: https://orsozox.com/
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: katamars-coptic-lectionary
